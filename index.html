@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav id="navbar">
+        <!-- <div id="header-name">SJ</div> -->
+        <ul>
+            <li class="item"><a href="#welcome">01.Welcome</a></li>
+            <li class="item"><a href="#about-text">02.About</a></li>
+            <li class="item"><a href="#portfolio">03.Portfolio</a></li>
+            <li class="item"><a href="#resume">04.Resume</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+        <a id="sidebar-mail" class="sidebar-image" href=""><img src="Images/email.png"></a>
+        <a id="sidebar-mail-extended" class="sidebar-text" href="">siddharthjain@iitbhilai.ac.in</a>
+        <a id="sidebar-phone" class="sidebar-image" href=""><img src="Images/phone.png"></a>
+        <a id="sidebar-phone-extended" class="sidebar-text" href="">8957222010</a>
+        <a id="sidebar-linkedin" class="sidebar-image" href="https://www.linkedin.com/in/siddharth-jain-242652275/" 
+            target="_blank"><img src="Images/linkedin.png" alt="Githu logo"></a>
+        <a id="sidebar-linkedin-extended" class="sidebar-text" href="https://www.linkedin.com/in/siddharth-jain-242652275/" 
+            target="_blank">siddharth-jain-242652275</a>
+        <a id="sidebar-github" class="sidebar-image" href="https://github.com/sidj3012" target="_blank">
+            <img src="Images/github.png" alt="Githu logo"></a>
+        <a id="sidebar-github-extended" class="sidebar-text" href="https://github.com/sidj3012" target="_blank">
+            sidj3012</a>
+    </div>
+
+    <section class="container" id="welcome">
+        <div id="welcome-heading">Welcome</div>
+        <div id="welcome-intro">I am Siddharth Jain, a web developer.</div>
+    </section>
+
+    <section class="container">
+        <div id="about-text">
+            <div class="heading">About</div>
+            <div class="line"></div>
+            <p>Hi! I am Siddharth. I am an Undergraduate second year student at IIT Bhilai. I have worked as wev developer
+                intern at Basil Infotech Limited for 3 months where I worked on both frontend and backend part.
+            </p>
+            <p>From my past experience I learnt how to work effectively as a team and manage projects on time. I am 
+                interested to learn new things and I grasp new concepts very quickly.
+            </p>
+            <p>
+                My skills are:
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Node.js</li>
+                    <li>Php</li>
+                    <li>C</li>
+                    <li>C++</li>
+                </ul>
+            </p>
+            <p>
+                In addition to that, I have intermediate knowledge in Data Structures and Algorithms.
+            </p>
+        </div>
+        <div id="about-photo">
+            <div id="about-photo-image"><img src="Images/profilepicture.jpg"></div>
+            <div id="about-photo-text">
+                <div>Siddharth Jain</div>
+                <div>IIT Bhilai'26</div>
+                <div>siddharthjain@iitbhilai.ac.in</div>
+                <div>8957222010</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="portfolio">
+        <div class="heading">Portfolio</div>
+        <div class="line"></div>
+        <div class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="./Images/foodorderwebsite.png">
+                <div class="portfolio-image-text-top">Food Order Website</a></div> 
+                <div class="portfolio-image-text-left"><a href="https://sidj3012.github.io/zomaggy.github.io/" target="_blank">
+                    Deployed Site</a></div> 
+                <div class="portfolio-image-text-right"><a href="https://github.com/sidj3012/zomaggy.github.io" target="_blank">
+                    Github</a></div> 
+            </div>
+            <div class="portfolio-image">
+                <img src="./Images/transportation.png">
+                <div class="portfolio-image-text-top">Transportation Website</div>
+                <div class="portfolio-image-text-left"><a href="https://sidj3012.github.io/P3-transportation/" target="_blank">
+                    Deployed Site</a></div> 
+                <div class="portfolio-image-text-right"><a href="https://github.com/sidj3012/P3-transportation" target="_blank">
+                    Github</a></div> 
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="resume">
+        <div class="heading">Resume</div>
+        <div class="line"></div>
+        <div id="resume-image">
+            <a href="resume.pdf" target="_blank"><img src="./Images/resume.jpg"></a>
+        </div>
+    </section>
+    <footer>
+        <div id="h">Site created by Siddharth Jain</div>
+        <div>Design based on Jared Kohrt portfolio website</div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#about-photo").hover(function(){
+            $("#about-photo-image").css("display","none");
+            $("#about-photo-text").css("display","block");
+            }, function(){
+            $("#about-photo-image").css("display","block");
+            $("#about-photo-text").css("display","none");
+        });
+        $("#sidebar-mail").hover(function(){
+            $("#sidebar-mail").css("display","none");
+            $("#sidebar-mail-extended").css("display","block");
+            }, function(){
+            $("#sidebar-mail").css("display","block");
+            $("#sidebar-mail-extended").css("display","none");
+        });
+        $("#sidebar-phone").hover(function(){
+            $("#sidebar-phone").css("display","none");
+            $("#sidebar-phone-extended").css("display","block");
+            }, function(){
+            $("#sidebar-phone").css("display","block");
+            $("#sidebar-phone-extended").css("display","none");
+        });
+        $("#sidebar-linkedin").hover(function(){
+            $("#sidebar-linkedin").css("display","none");
+            $("#sidebar-linkedin-extended").css("display","block");
+            }, function(){
+            $("#sidebar-linkedin").css("display","block");
+            $("#sidebar-linkedin-extended").css("display","none");
+        });
+        $("#sidebar-github").hover(function(){
+            $("#sidebar-github").css("display","none");
+            $("#sidebar-github-extended").css("display","block");
+            }, function(){
+            $("#sidebar-github").css("display","block");
+            $("#sidebar-github-extended").css("display","none");
+        });
+        });
+    </script>
+</body>
+</html>
