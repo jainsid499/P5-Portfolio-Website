@@ -158,12 +158,25 @@ color: #72FACA;
     box-sizing: border-box;
 }
 
-
+#experience{
+    height: auto;
+    width: 80vw;
+    font-size: 1.3rem;
+    }
+    .heading{
+    font-size: 2rem;
+    color: #72FACA;
+    }
+    .line{
+        margin-bottom: 1rem;
+        width: 10rem;
+        border: 0.06rem solid #72FACA;
+    }
 
 
 
 #portfolio{
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
