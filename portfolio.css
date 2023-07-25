@@ -89,6 +89,29 @@ body{
     border-bottom-right-radius: 1rem;
 }
 
+.download-text{
+    padding-top: 2rem;
+    display: block;
+    text-align: center;
+
+}
+
+.download-text a{
+    font-size: 1.8rem;
+    color: #72FACA;
+    text-decoration: none;
+}
+
+.download-text-certificates{
+    display: block;
+}
+
+.download-text-certificates a{
+    font-size: 1.8rem;
+    color: #72FACA;
+    text-decoration: none;
+}
+
 #welcome{
     height: 100vh;
     display: flex;
@@ -110,18 +133,20 @@ body{
 
 .container{
     display: flex;
+    /* padding-top: 5rem; */
     height: 100vh;
     color: whitesmoke;
     padding-left: 5rem;
 }
 
 #about-text{
-width: 50vw;
-font-size: 1.3rem;
+    padding: 5rem;
+    width: 50vw;
+    font-size: 1.5rem;
 }
 .heading{
-font-size: 2rem;
-color: #72FACA;
+    font-size: 2.7rem;
+    color: #72FACA;
 }
 .line{
     margin-bottom: 1rem;
@@ -135,8 +160,8 @@ color: #72FACA;
     height: 25rem;
     width: 20rem;
     border-radius: 50%;
-    margin-left: 10rem;
-    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-top: 10rem;
 }
 #about-photo-image img{
     height: 25rem;
@@ -159,23 +184,20 @@ color: #72FACA;
 }
 
 #experience{
+    padding: 5rem;
     height: auto;
     width: 80vw;
-    font-size: 1.3rem;
-    }
-    .heading{
-    font-size: 2rem;
-    color: #72FACA;
-    }
-    .line{
-        margin-bottom: 1rem;
-        width: 10rem;
-        border: 0.06rem solid #72FACA;
-    }
+    font-size: 1.5rem;
+}
 
+#experience-line{
+    width: 12rem;
+}
 
 
 #portfolio{
+    padding-top: 5rem;
+    padding-left:10rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -238,7 +260,37 @@ color: #72FACA;
     color: azure;
 }
 
+#certification-container-main{
+    padding-top: 5rem;
+    padding-left: 10rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#certification-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#certification-photo-image img{
+    padding: 2rem;
+    height: 17rem;
+    width: 20rem;
+    display: block;
+}
+
+#certification-text{
+    width: 50vw;
+    font-size: 1.5rem;
+}
+#certification-line{
+    width: 15rem;
+}
+
 #resume{
+    padding-top: 5rem;
+    padding-left: 10rem;
     display: flex;
     flex-direction: column;
 }
@@ -257,7 +309,7 @@ footer{
     font-size: 1.1rem;
 }
 
-@media(max-width:768px){
+@media(max-width:400px){
 
     #navbar li a{
         text-decoration: none;
