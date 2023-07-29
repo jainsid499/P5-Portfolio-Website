@@ -1,0 +1,100 @@
+.portfolio__certifications {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__certifications-maincontainer{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin-top: 5rem;
+}
+
+.portfolio__certifications-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 2rem;
+}
+
+.portfolio__certifications-image img{
+    height: 400px;
+}
+
+.portfolio__certifications-container{
+    width: 100vw;
+    margin-right: 10rem;
+}
+
+.portfolio__certifications-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.portfolio__certifications-content h4{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    letter-spacing: -0.04em;
+    margin-top: 2rem;
+    color: #ffffff;
+}
+
+.portfolio__certifications-content p,
+.portfolio__certifications-content a{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    letter-spacing: -0.04em;
+    color: var(--color-text);
+    /* margin: 2rem;
+    margin-left: 0rem; */
+}
+
+@media screen and (max-width: 950px){
+    .portfolio__certifications{
+        flex-direction: column;
+    }
+
+    .portfolio__certifications-image{
+        margin: 1rem 0;
+    }
+
+    .portfolio__certifications-content{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .portfolio__certifications{
+        flex-direction: column;
+    }
+
+    .portfolio__certifications-image img{
+        width: 20rem;
+    }
+
+    .portfolio__certifications-maincontainer{
+        flex-direction: column;
+    }
+
+    .portfolio__certifications-container{
+        margin-bottom: 4rem;
+    }
+
+    .portfolio__certifications-content{
+        margin-top: 2rem;
+    }
+
+    .portfolio__certifications-content p,
+    .portfolio__certifications-content a{
+        margin-right: 4rem;
+    }
+}

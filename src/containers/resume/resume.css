@@ -1,0 +1,132 @@
+.portfolio__resume {
+    display: flex;
+}
+
+.portfolio__resume-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.portfolio__resume-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.portfolio__resume-image a{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    letter-spacing: -0.04em;
+    color: var(--color-text);
+}
+
+.portfolio__resume-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+}
+
+.portfolio__resume-content__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.portfolio__resume-content__input button{
+    flex:0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    background: #ff4820;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+
+.portfolio__resume-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio__resume-image img{
+    width: 90%;
+    height: 90%;
+}
+
+@media screen and (max-width: 1050px) {
+    .portfolio__resume {
+        flex-direction: column;
+    }
+
+    .portfolio__resume-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolio__resume h1{
+        font-size: 48px;
+        line-height: 60px
+    }
+
+    .portfolio__resume-content__input input,
+    .portfolio__resume-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .portfolio__resume {
+        height: 100vh;
+    }
+    .portfolio__resume h1{
+        font-size: 36px;
+        line-height: 48px;
+        margin-left: 5rem;
+        
+    }
+    .portfolio__resume-content {
+        padding-top: 0rem;
+        margin-bottom: -12rem;
+        margin-top: -14rem;
+    }
+
+    /* .gradient__text{
+        margin-top: 30rem;
+    } */
+
+    .portfolio__resume-content__input input,
+    .portfolio__resume-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
