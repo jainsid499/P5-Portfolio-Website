@@ -21,9 +21,6 @@ const Navbar = () => {
   return (
     <div className="portfolio__navbar">
       <div className="portfolio__navbar-links">
-        {/* <div classname="portfolio__navbar-links_logo">
-          <img src={logo} alt="logo" />
-        </div> */}
         <div classname="portfolio__navbar-links_logo">
           <p id='sj'>SJ</p>
         </div>
