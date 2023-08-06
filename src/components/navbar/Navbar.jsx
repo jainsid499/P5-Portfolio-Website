@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
-import { AiFillGithub, GrMail, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { BiLogoGmail,BiSolidPhoneCall } from 'react-icons/bi';
 // import logo from '../../assets/logo.svg';
 import './navbar.css';
